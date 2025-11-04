@@ -55,7 +55,6 @@ No.     Time        Source          Destination     Protocol Length Info
 1      0.000000    192.168.1.50    192.168.1.100   TCP      74     54321 → 22 [SYN] Seq=0 Win=1024 Len=0  
 2      0.000123    192.168.1.100   192.168.1.50    TCP      74     22 → 54321 [SYN, ACK] Seq=0 Ack=1 Win=1024 Len=0  
 3      0.000234    192.168.1.50    192.168.1.100   TCP      74     54321 → 22 [RST] Seq=1 Win=0 Len=0  
-
 4      0.001000    192.168.1.50    192.168.1.100   TCP      74     54322 → 80 [SYN] Seq=0 Win=1024 Len=0  
 5      0.001123    192.168.1.100   192.168.1.50    TCP      74     80 → 54322 [SYN, ACK] Seq=0 Ack=1 Win=1024 Len=0  
 6      0.001234    192.168.1.50    192.168.1.100   TCP      74     54322 → 80 [RST] Seq=1 Win=0 Len=0  
@@ -63,7 +62,6 @@ No.     Time        Source          Destination     Protocol Length Info
 No.     Time        Source          Destination     Protocol Length Info  
 7      0.002000    192.168.1.50    192.168.1.100   TCP      74     54323 → 22 [FIN] Seq=0 Win=1024 Len=0  
 8      0.002123    192.168.1.100   192.168.1.50    TCP      74     22 → 54323 [RST, ACK] Seq=0 Ack=1 Win=1024 Len=0  
-
 9      0.003000    192.168.1.50    192.168.1.100   TCP      74     54324 → 80 [FIN] Seq=0 Win=1024 Len=0  
 10     0.003456    192.168.1.100   192.168.1.50    TCP      74     80 → 54324 [RST, ACK] Seq=0 Ack=1 Win=1024 Len=0  
 
@@ -74,7 +72,6 @@ No.     Time        Source          Destination     Protocol Length Info
 No.     Time        Source          Destination     Protocol Length Info  
 13     0.005000    192.168.1.50    192.168.1.100   UDP      46     54326 → 53 Len=0  
 14     0.005123    192.168.1.100   192.168.1.50    ICMP     70     Destination unreachable (Port unreachable)  
-
 15     0.006000    192.168.1.50    192.168.1.100   UDP      46     54327 → 161 Len=0  
 16     0.006456    192.168.1.100   192.168.1.50    UDP      46     161 → 54327 Len=0  
 
