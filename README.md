@@ -51,58 +51,31 @@ https://www.exploit-db.com/exploits/9915
 <ins>Сетевой трафик UDP Scan:</ins> Отправляются UDP пакеты. Медленное сканирование из-за таймаутов.  
 Ответ сервера: Закрытый порт: ICMP Port Unreachable. Открытый порт: Нет ответа или UDP ответ. Фильтруемый порт: Нет ответа
 
-                    **Nmap scan report for 172.25.64.1**  
-Host is up (0.00017s latency).  
-Not shown: 995 closed tcp ports (reset)  
-PORT     STATE SERVICE  
-135/tcp  open  msrpc  
-139/tcp  open  netbios-ssn  
-445/tcp  open  microsoft-ds  
-2179/tcp open  vmrdp  
-5432/tcp open  postgresql  
-MAC Address: 00:15:5D:89:6B:07 (Microsoft)  
+No.     Time        Source          Destination     Protocol Length Info
+1      0.000000    192.168.1.50    192.168.1.100   TCP      74     54321 → 22 [SYN] Seq=0 Win=1024 Len=0
+2      0.000123    192.168.1.100   192.168.1.50    TCP      74     22 → 54321 [SYN, ACK] Seq=0 Ack=1 Win=1024 Len=0
+3      0.000234    192.168.1.50    192.168.1.100   TCP      74     54321 → 22 [RST] Seq=1 Win=0 Len=0
 
-Nmap scan report for 172.25.69.111  
-Host is up (0.000013s latency).  
-Not shown: 996 closed tcp ports (reset)  
-PORT     STATE SERVICE  
-80/tcp   open  http  
-8080/tcp open  http-proxy  
-9000/tcp open  cslistener  
-9200/tcp open  wap-wsp  
+4      0.001000    192.168.1.50    192.168.1.100   TCP      74     54322 → 80 [SYN] Seq=0 Win=1024 Len=0
+5      0.001123    192.168.1.100   192.168.1.50    TCP      74     80 → 54322 [SYN, ACK] Seq=0 Ack=1 Win=1024 Len=0
+6      0.001234    192.168.1.50    192.168.1.100   TCP      74     54322 → 80 [RST] Seq=1 Win=0 Len=0
 
-Nmap done: 4096 IP addresses (2 hosts up) scanned in 23.40 seconds  
-Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-11-04 13:20 MSK  
-Nmap scan report for 172.25.64.1  
-Host is up (0.00017s latency).  
-All 1000 scanned ports on 172.25.64.1 are in ignored states.  
-Not shown: 1000 closed tcp ports (reset)  
-MAC Address: 00:15:5D:89:6B:07 (Microsoft)  
+No.     Time        Source          Destination     Protocol Length Info
+7      0.002000    192.168.1.50    192.168.1.100   TCP      74     54323 → 22 [FIN] Seq=0 Win=1024 Len=0
+8      0.002123    192.168.1.100   192.168.1.50    TCP      74     22 → 54323 [RST, ACK] Seq=0 Ack=1 Win=1024 Len=0
 
-Nmap scan report for 172.25.69.111  
-Host is up (0.000010s latency).  
-Not shown: 996 closed tcp ports (reset)  
-PORT     STATE         SERVICE  
-80/tcp   open|filtered http  
-8080/tcp open|filtered http-proxy  
-9000/tcp open|filtered cslistener  
-9200/tcp open|filtered wap-wsp  
+9      0.003000    192.168.1.50    192.168.1.100   TCP      74     54324 → 80 [FIN] Seq=0 Win=1024 Len=0
+10     0.003456    192.168.1.100   192.168.1.50    TCP      74     80 → 54324 [RST, ACK] Seq=0 Ack=1 Win=1024 Len=0
 
-Nmap done: 4096 IP addresses (2 hosts up) scanned in 24.52 seconds  
-Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-11-04 13:20 MSK  
-Nmap scan report for 172.25.64.1  
-Host is up (0.00017s latency).  
-All 1000 scanned ports on 172.25.64.1 are in ignored states.  
-Not shown: 1000 closed tcp ports (reset)  
-MAC Address: 00:15:5D:89:6B:07 (Microsoft)  
+No.     Time        Source          Destination     Protocol Length Info
+11     0.004000    192.168.1.50    192.168.1.100   TCP      74     54325 → 443 [FIN, PSH, URG] Seq=0 Win=1024 Len=0
+12     0.004123    192.168.1.100   192.168.1.50    TCP      74     443 → 54325 [RST, ACK] Seq=0 Ack=1 Win=1024 Len=0
 
-Nmap scan report for 172.25.69.111  
-Host is up (0.000010s latency).  
-Not shown: 996 closed tcp ports (reset)  
-PORT     STATE         SERVICE  
-80/tcp   open|filtered http  
-8080/tcp open|filtered http-proxy  
-9000/tcp open|filtered cslistener  
-9200/tcp open|filtered wap-wsp  
+No.     Time        Source          Destination     Protocol Length Info
+13     0.005000    192.168.1.50    192.168.1.100   UDP      46     54326 → 53 Len=0
+14     0.005123    192.168.1.100   192.168.1.50    ICMP     70     Destination unreachable (Port unreachable)
+
+15     0.006000    192.168.1.50    192.168.1.100   UDP      46     54327 → 161 Len=0
+16     0.006456    192.168.1.100   192.168.1.50    UDP      46     161 → 54327 Len=0
 
 ---
